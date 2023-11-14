@@ -1,8 +1,11 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <input type="number" v-model="message" placeholder="도감번호를 입력하세요" @change="Calc">
+    <input type="number" model="message" placeholder="도감번호를 입력하세요" @change="Calc"
+    class="my-5 border border-black py-3 px-10 text-2xl">
     <p>{{ message }}</p>
+    <router-link to="/">Hello</router-link>
+    <router-view></router-view>	
   </div>
 </template>
 
